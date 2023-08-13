@@ -26,7 +26,12 @@ const Jouney = () => {
             </div>
           </div>
           <div className="img">
-            <img src={mimg} alt="" className="w-96 ml-2 rounded " />
+            <img
+              src={mimg}
+              alt=""
+              loading="lazy"
+              className="w-96 ml-2 rounded "
+            />
             <div className="det p-2 max-[600px]:block lg:hidden">
               <p>code</p>
               <p>live preview</p>

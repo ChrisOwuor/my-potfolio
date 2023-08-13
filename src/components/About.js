@@ -7,7 +7,7 @@ const About = () => {
       <div className="journeyCont w-4/5  flex  max-[600px]:flex-col  lg:justify-center">
         <h1 className="text-center lg:hidden">About Me</h1>
         <div className="imgs  lg:w-2/4 lg:flex lg:justify-end">
-          <img src={img} alt="" className="w-96 rounded-md" />
+          <img src={img} alt="" loading="lazy" className="w-96 rounded-md" />
         </div>
         <div className="text lg:w-2/4 lg:ml-2">
           <h1 className="max-[600px]:hidden">About me</h1>{" "}

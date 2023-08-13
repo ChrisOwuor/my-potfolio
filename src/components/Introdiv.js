@@ -13,7 +13,7 @@ const Introdiv = () => {
           these bits flow in my vein
         </p>
         <div className="img  max-[600px]:ml-14  max-[600px]:mt-8 max-[600px]:mr-9">
-          <img src={img} alt="" className="  w-24 " />
+          <img src={img} alt="" loading='lazy' className="  w-24 " />
         </div>
       </div>
       <div className="img  bg-red-200 h-2/5 mt-32 max-[600px]:hidden ">

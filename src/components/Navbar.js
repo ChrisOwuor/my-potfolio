@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="cont  flex justify-between align-middle pt-1 relative bg-slate-600 ">
+    <div className="cont  flex justify-between align-middle pt-1 relative bg-slate-600  ">
       <div className="logo">
         <h1 className="ml-20 max-[600px]:ml-4">Tish</h1>
       </div>
@@ -34,8 +34,8 @@ const Navbar = () => {
         </button>
       </div>
       <div
-        className={`mobmenu outline absolute right-0 top-0 h-screen w-2/4 bg-white outline-1  ${
-          isOpen ? "block" : "hidden"
+        className={`mobmenu absolute right-0 top-0 h-screen bg-gray-500 outline-1   ease-in ${
+          isOpen ? "w-2/4" : "w-0 hidden"
         }    `}
       >
         <div className="actionclose bg-gray-500 mb-10 w-full relative ">
