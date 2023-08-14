@@ -1,19 +1,22 @@
-import css from "../assets/css.png";
-import native from "../assets/native.png";
-import node from "../assets/node.png";
-import express from "../assets/express.png";
+import css from "../assets/icons8-css-100.png";
+import native from "../assets/icons8-react-native-48.png";
+import node from "../assets/icons8-nodejs-48.png";
+import express from "../assets/expressjs_logo_icon_169185.png";
 import iot from "../assets/iot.png";
-import js from "../assets/js.png";
-import reactlogo from "../assets/react.png";
-import html from "../assets/html.png";
+import js from "../assets/icons8-javascript-48.png";
+// import reactlogo from "../assets/react.png";
+import html from "../assets/icons8-html-48.png";
+import python from "../assets/icons8-python-48.png"
 import tailwind from "../assets/tailwind.png";
+import django from "../assets/icons8-django-48.png"
 
 const TechStack = () => {
-  const img = [tailwind, reactlogo, css, html, js, native, express, iot, node];
+  const img = [tailwind, css, html, js,python, django,native, express, iot, node];
   return (
     <div className="techstsck  flex justify-center mt-10 ">
       <div className="techElem">
-        <h1 className="text-center">What i do best</h1>
+        <h1 className="text-center font-mono text-lg font-bold underline">
+Inside my tech stack         </h1>
         <ul className="flex flex-wrap  ">
           {" "}
           {img.map((logo, index) => (

@@ -24,6 +24,10 @@
   color: white;
 }
 
+.mainIntro .img  {
+border-radius: 50% 50% 40% 60% / 60% 50% 50% 40%;
+background-image: url(./assets/linkedin.png);
+}
 .App-link {
   color: #61dafb;
 }
