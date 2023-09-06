@@ -25,7 +25,7 @@ const Jouney = () => {
               also provides a user-friendly interface for clients to connect and
               explore testimonials.
             </p>
-            <div className="det p-2 max-[600px]:hidden">
+            <div className="det p-2 max-[1300px]:hidden">
               <p className=" bg-teal-500 w-max rounded-sm p-2 mb-4">
                 <a href="https://github.com/ChrisOwuor/kaybbros">Source code</a>
               </p>
@@ -45,7 +45,7 @@ const Jouney = () => {
               />
             </a>
 
-            <div className="det p-2 max-[600px]:block lg:hidden">
+            <div className="det p-2 max-[1300px]:block lg:hidden">
               <p className=" bg-teal-500 w-max rounded-sm p-2 mb-4  ">
                 <a href="https://github.com/ChrisOwuor/kaybbros">Source code</a>
               </p>

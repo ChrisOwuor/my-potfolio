@@ -16,12 +16,12 @@ const Navbar = () => {
     <div className="cont sticky top-0 z-50">
       <div className="cont  flex justify-between align-middle pt-1 relative bg-white  ">
         <div className="logo">
-          <h1 className="ml-20 max-[600px]:ml-4 underline  text-lg font-bold">
+          <h1 className="ml-20 max-[1300px]:ml-4 underline  text-lg font-bold">
             {" "}
             .Dev
           </h1>
         </div>
-        <div className="items max-[600px]:hidden">
+        <div className="items max-[1300px]:hidden">
           <ul className="flex  mr-24">
             {" "}
             <li className="ml-12">Home</li>
@@ -29,7 +29,7 @@ const Navbar = () => {
             <li className="ml-12">Projects</li>
           </ul>
         </div>
-        <div className={`menu-icon hidden max-[600px]:block`}>
+        <div className={`menu-icon hidden max-[1300px]:block`}>
           <button
             onClick={open}
             className="mr-4 bg-slate-500 p-0.5 px-1 rounded-md"

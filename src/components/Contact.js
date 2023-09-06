@@ -1,7 +1,7 @@
 const Contact = () => {
   return (
     <div className="contact h-max flex justify-center  ">
-      <div className="elem lg:w-3/5 py-12   max-[600px]:w-4/5">
+      <div className="elem lg:w-3/5 py-12   max-[1300px]:w-4/5">
         <h1 className="text-center font-mono underline text-lg font-bold lg:text-left">
           Final Thoughts
         </h1>

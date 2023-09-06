@@ -5,7 +5,7 @@ const Footer = () => {
   const link = "https://wa.me/+254713347175";
   return (
     <div className="flex justify-center  w-full h-max lg:p-11 ">
-      <div className="centereddiv flex justify-center gap-4 lg:w-3/5 max-[600px]:flex-col ">
+      <div className="centereddiv flex justify-center gap-4 lg:w-3/5 max-[1300px]:flex-col ">
         <div className="socials w-full md:w-auto py-5  px-7">
           <h1 className=" text-lg font-bold underline">Get In touch </h1>
           <div className="cont flex align-middle gap-5 py-2.5 ">

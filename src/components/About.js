@@ -13,7 +13,7 @@ setOpen(!open)
 
   return (
     <div className="journey flex justify-center w-full  h-max mb-4 py-10">
-      <div className="journeyCont w-4/5   flex  max-[600px]:flex-col  lg:justify-center">
+      <div className="journeyCont w-4/5   flex  max-[1300px]:flex-col  lg:justify-center">
         <h1 className="text-center lg:hidden font-mono text-lg font-bold underline">
           About Me
         </h1>
@@ -25,8 +25,8 @@ setOpen(!open)
             className="w-96 rounded-md h-96  object-cover "
           />
         </div>
-        <div className="text  lg:w-2/4 lg:ml-2  max-[600px]:mt-14 lg:p-8">
-          <h1 className="max-[600px]:hidden font-mono text-lg font-bold text-center underline">
+        <div className="text  lg:w-2/4 lg:ml-2  max-[1300px]:mt-14 lg:p-8">
+          <h1 className="max-[1300px]:hidden font-mono text-lg font-bold text-center underline">
             About me
           </h1>{" "}
           <p>

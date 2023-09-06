@@ -20,7 +20,7 @@ const Third = () => {
               streamlined through the utilization of the Django admin site,
               empowering content management with ease.
             </p>
-            <div className="det p-2 max-[600px]:hidden">
+            <div className="det p-2 max-[1300px]:hidden">
               <p className=" bg-teal-500 w-max rounded-sm p-2 mb-4">
                 <a href="https://github.com/ChrisOwuor/django-blog/">
                   Source code
@@ -30,7 +30,7 @@ const Third = () => {
           </div>
           <div className="img">
             <img src={mimg} alt="" className="w-96 ml-2 rounded " />
-            <div className="det p-2 max-[600px]:block lg:hidden">
+            <div className="det p-2 max-[1300px]:block lg:hidden">
               <p className=" bg-teal-500 w-max rounded-sm p-2 mb-4">
                 <a href="https://github.com/ChrisOwuor/django-blog">
                   Source code

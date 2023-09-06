@@ -22,7 +22,7 @@ Inside my tech stack         </h1>
           {img.map((logo, index) => (
             <li
               key={index}
-              className="   flex justify-center max-[600px]:h-14 align-middle p-3"
+              className="   flex justify-center max-[1300px]:h-14 align-middle p-3"
             >
               <img src={logo} alt="" className=" h-10 w-10 object-contain " />
             </li>

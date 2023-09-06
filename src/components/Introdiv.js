@@ -5,9 +5,9 @@ import "../App.css"
 
 const Introdiv = () => {
   return (
-    <div className="mainIntro   flex justify-center gap-52  h-max  mt-3 max-[600px]:justify-start ">
-      <div className="text   h-96 mt-32 max-[600px]:mt-12 max-[600px]: pb-12 max-[600px]:h-max  ">
-        <p className=" max-[600px]:ml-14  max-[600px]:mt-14 max-[600px]:mr-9    ">
+    <div className="mainIntro   flex justify-center gap-52  h-max  mt-3 max-[1300px]:justify-start ">
+      <div className="text   h-96 mt-32 max-[1300px]:mt-12 max-[1300px]: pb-12 max-[1300px]:h-max  ">
+        <p className=" max-[1300px]:ml-14  max-[1300px]:mt-14 max-[1300px]:mr-9    ">
           <span className="text-3xl font-bold font-mono">
             {" "}
             Hi there I am chris,
@@ -21,11 +21,11 @@ const Introdiv = () => {
           <br />
         </p>{" "}
         <br />
-        <p className="font-mono font-semibold  max-[600px]:ml-14 ">
+        <p className="font-mono font-semibold  max-[1300px]:ml-14 ">
           I'm a dedicated software developer with <br /> a keen eye for design
           and a passion for turning ideas <br /> into reality.
         </p>
-        <ul className="flex gap-2 mt-4 max-[600px]:ml-14 ">
+        <ul className="flex gap-2 mt-4 max-[1300px]:ml-14 ">
           <li>
             <a href="/">
               {" "}
@@ -40,11 +40,11 @@ const Introdiv = () => {
             </a>
           </li>
         </ul>
-        <div className="img  max-[600px]:ml-14  lg:hidden    max-[600px]:hidden  max-[600px]:mt-8 max-[600px]:mr-9">
+        <div className="img  max-[1300px]:ml-14  lg:hidden    max-[1300px]:hidden  max-[1300px]:mt-8 max-[1300px]:mr-9">
           <img src={img} alt="" loading="lazy" className="  w-24 " />
         </div>
       </div>
-      <div className="img  bg-red-200 w-[400px] h-96 mt-[50px] max-[600px]:hidden shadow-lg pt-12"></div>
+      <div className="img  bg-red-200 w-[400px] h-96 mt-[50px] max-[1300px]:hidden shadow-lg pt-12"></div>
     </div>
   );
 };
