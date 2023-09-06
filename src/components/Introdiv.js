@@ -44,7 +44,7 @@ const Introdiv = () => {
           <img src={img} alt="" loading="lazy" className="  w-24 " />
         </div>
       </div>
-      <div className="img  bg-red-200 w-[400px] h-96 mt-[50px] max-[600px]:hidden  pt-12"></div>
+      <div className="img  bg-red-200 w-[400px] h-96 mt-[50px] max-[600px]:hidden shadow-lg pt-12"></div>
     </div>
   );
 };
