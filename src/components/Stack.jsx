@@ -96,6 +96,25 @@ const stack = [
       },
     ],
   },
+  {
+    id: 7,
+    title: "Cloud Platforms",
+    img: "https://p7.hiclipart.com/preview/249/603/673/onedrive-computer-icons-cloud-storage-microsoft-file-hosting-service-clouds.jpg",
+    content:
+      "Proficient in designing, deploying, and managing applications on various cloud platforms, enabling scalable and resilient solutions.",
+    frameworks: [
+      {
+        title: "Amazon Web Services (AWS)",
+        content:
+          "Experienced in deploying and managing applications on AWS, including EC2, S3 and cloud storages",
+      },
+      {
+        title: "Google Cloud Platform (GCP)",
+        content:
+          "Knowledgeable in utilizing Google Cloud Platform for developing and deploying applications, including Compute Engine, Cloud Storage, and Cloud Functions.",
+      },
+    ],
+  },
 ];
 
 export default stack;

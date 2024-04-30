@@ -13,18 +13,21 @@ export default function Tech() {
   return (
     <div
       id="services"
-      className="pt-4 mx-auto max-w-2xl lg:max-w-5xl bg-transparent rounded-xl mt-5  "
+      className="pt-4 mx-auto max-w-2xl lg:max-w-5xl bg-transparent rounded-xl mt-16 sm:mt-32  "
     >
-      <h2 className="title text-center mb-12 aos-init aos-animate text-2xl font-semibold tracking-tight text-zinc-800 sm:text-3xl">
-        My Tech Stack
-      </h2>
-      <p className=" text-gray-500 lg:w-3/5 mx-auto">
-        `` I am a dedicated developer skilled in Python, Node.js, HTML/CSS, and
-        more. From crafting efficient backend solutions to designing
-        user-friendly interfaces, I thrive in the world of code. Explore my tech
-        stack below to learn more about my expertise and projects.
-      </p>
-      <div className="grid lg:grid-cols-2 gap-8 grid-cols-1 ">
+      {" "}
+      <header className="max-w-2xl my-4">
+        <h1 className="text-4xl font-bold tracking-tight text-zinc-800  sm:text-5xl">
+          My Tech Stack: Unlocking Limitless Potential{" "}
+        </h1>
+        <p className="mt-6 text-base text-zinc-600 ">
+          I am a dedicated developer skilled in Python, Node.js, HTML/CSS, and
+          more. From crafting efficient backend solutions to designing
+          user-friendly interfaces, I thrive in the world of code. Explore my
+          tech stack below to learn more about my expertise and projects.
+        </p>
+      </header>
+      <div className="grid lg:grid-cols-2 gap-8 grid-cols-1 mt-16 sm:mt-20">
         <>
           {stack.map((item, index) => (
             <div

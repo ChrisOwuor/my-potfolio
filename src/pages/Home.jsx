@@ -21,12 +21,13 @@ export default function Home() {
         <div className="mx-auto max-w-2xl lg:max-w-5xl ">
           <div className="max-w-2xl">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl">
-             Developer, mentor and student.
+              Developer, mentor and student.
             </h1>
             <p className="mt-6 text-base text-zinc-600 ">
-              I’m Chrispine, a software developer and mentor based in Nairobi,
-              where I develop technologies that empower regular people to
-              explore space on their own terms.
+              Hey, I&apos;m Chrispine, a software developer and mentor based in
+              Nairobi. I&apos;m all about crafting tech solutions that empower
+              people to break barriers and reach new heights. Let&apos;s embark
+              on a journey of innovation together.
             </p>
             <div className="mt-6 flex gap-6">
               <Link
