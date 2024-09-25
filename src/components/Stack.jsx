@@ -35,6 +35,20 @@ const stack = [
   },
   {
     id: 3,
+    title: "PHP",
+    img: "https://banner2.cleanpng.com/20180904/xhu/kisspng-logo-image-computer-icons-php-portable-network-gra-william-davies-meng-mongodb-1713944344684.webp",
+    content:
+      "Experienced in developing dynamic and robust web applications using PHP, following best practices for performance and security. Proficient in integrating databases, RESTful APIs, and handling server-side logic for scalable applications.",
+    frameworks: [
+      {
+        title: "Laravel",
+        content:
+          "Skilled in using Laravel to build efficient, secure, and maintainable web applications. Experienced in deploying Laravel applications on AWS services like EC2 and S3, with advanced usage of cloud storage and CDN for optimal performance.",
+      },
+    ],
+  },
+  {
+    id: 4,
 
     title: "HTML/CSS",
     img: "https://miro.medium.com/v2/resize:fit:792/1*lJ32Bl-lHWmNMUSiSq17gQ.png",
@@ -49,7 +63,7 @@ const stack = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     title: "Version Control",
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/1200px-GitHub_Invertocat_Logo.svg.png",
     content:
@@ -63,7 +77,7 @@ const stack = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     title: "JavaScript",
     img: "https://banner2.cleanpng.com/20180629/cb/kisspng-javascript-computer-icons-java-script-5b361adf4d5252.8379657115302724793167.jpg",
     content:
@@ -78,7 +92,7 @@ const stack = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     title: "Databases",
     img: "https://w7.pngwing.com/pngs/310/475/png-transparent-database-computer-icons-computer-software-information-database-miscellaneous-angle-information-technology.png",
     content:
@@ -97,16 +111,16 @@ const stack = [
     ],
   },
   {
-    id: 7,
+    id: 8,
     title: "Cloud Platforms",
     img: "https://p7.hiclipart.com/preview/249/603/673/onedrive-computer-icons-cloud-storage-microsoft-file-hosting-service-clouds.jpg",
     content:
-      "Proficient in designing, deploying, and managing applications on various cloud platforms, enabling scalable and resilient solutions.",
+      "Certified AWS Cloud Practitioner with expertise in designing, deploying, and managing applications on various cloud platforms, ensuring scalability, security, and resilience.",
     frameworks: [
       {
         title: "Amazon Web Services (AWS)",
         content:
-          "Experienced in deploying and managing applications on AWS, including EC2, S3 and cloud storages",
+          "Certified AWS Cloud Practitioner with extensive experience deploying and managing applications on AWS services like EC2, S3, RDS, and VPC. Skilled in leveraging AWS tools for cost optimization, scalability, and security.",
       },
       {
         title: "Google Cloud Platform (GCP)",

@@ -1,3 +1,5 @@
+
+import bh from "../assets/bh.jpg"
 export const data = [
   {
     id: 1,
@@ -47,5 +49,13 @@ export const data = [
     link: "https://github.com/ChrisOwuor/furni_e-commerce",
     img: "https://cdn-icons-png.flaticon.com/512/9203/9203620.png",
     stack: ["mysql", "django", "python"],
+  },
+  {
+    id: 7,
+    title: "BridgeHealth.",
+    text: "BridgeHealth is a comprehensive healthcare management system designed to streamline interactions between patients, doctors, and administrators. The platform allows users to register with distinct roles, including patients, doctors, and administrators, with role-specific features. Patients can manage their personal information, view medical records, and schedule appointments. Doctors can access their appointment schedules and provide medical recommendations. Administrators oversee user registrations, with the authority to approve or reject doctor and admin accounts. Additionally, the system offers secure login, logout, and password recovery through OTP verification, ensuring a seamless and secure experience for all users.",
+    link: "https://github.com/ChrispineOwuor/BridgeHealth",
+    img: bh,
+    stack: ["mysql", "laravel", "php","composer"],
   },
 ];
