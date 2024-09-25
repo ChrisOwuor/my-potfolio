@@ -15,10 +15,7 @@ export default function Education() {
           Education & Expreience
         </h2>
         <h1 className="font-[700] text-3xl mt-4"> My Resume</h1>
-        <p className="text-[#959cb1]">
-          There are many variations of passages of Lorem Ipsum available but the
-          majority have suffered alteration in some form.
-        </p>
+       
       </div>
       <ul className="timeline">
         <li>
