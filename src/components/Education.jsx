@@ -3,164 +3,176 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "../assets/main.css";
 import "aos/dist/aos.css";
+
 export default function Education() {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
   }, []);
+
+  const experiences = [
+    {
+      year: "2023",
+      title: "Emobilis Technology Institute",
+      subtitle: "Fullstack Development",
+      position: "right",
+      points: [
+        "Specialized in full-stack web development using Python as primary language",
+        "Built scalable APIs using Django Rest Framework",
+        "Managed data storage through MySQL database and SQLite3",
+        "Crafted user-friendly interfaces with modern design principles",
+        "Completed final project integrating third-party APIs including Daraja API for payment processing",
+      ],
+      skills: ["python", "django", "mysql", "REST APIs", "SQLite3"],
+    },
+    {
+      year: "2023",
+      title: "Freelance Developer",
+      subtitle: "",
+      position: "left",
+      points: [
+        "Delivered innovative solutions tailored to meet clients' unique requirements",
+        "Demonstrated proficiency across multiple programming languages and technologies",
+        "Successfully completed projects with focus on quality and efficiency",
+        "Applied problem-solving skills to overcome complex development challenges",
+        "Maintained high code quality standards in dynamic freelance environment",
+      ],
+      skills: [
+        "Version control",
+        "Time management",
+        "Soft skills",
+        "Problem solving",
+      ],
+    },
+    {
+      year: "2023",
+      title: "Jamii Telecommunications Limited",
+      subtitle: "Junior Network Engineer",
+      position: "right",
+      points: [
+        "Supported and enhanced organization's network infrastructure",
+        "Contributed to design, implementation, and maintenance of network solutions",
+        "Gained hands-on experience in network troubleshooting and optimization",
+        "Collaborated with dynamic team on network performance improvements",
+        "Developed deep understanding of corporate network management",
+      ],
+      skills: ["Cisco", "OSPF", "CRM", "Network security", "Troubleshooting"],
+    },
+    {
+      year: "2020 - 2024",
+      title: "Egerton University",
+      subtitle: "BSc Computer Science",
+      position: "left",
+      points: [
+        "Explored low-level programming languages and system architecture",
+        "Studied Operating Systems principles and implementation",
+        "Gained practical networking experience using Cisco Packet Tracer",
+        "Covered computer security fundamentals and best practices",
+        "Learned software design life cycle methodologies and applications",
+      ],
+      skills: ["OOP", "Computer networks", "SDLC", "Security", "System Design"],
+    },
+  ];
+
   return (
-    <div id="services" className=" py-16 mx-auto max-w-2xl lg:max-w-5xl bg-hero  ">
-      <div className="w-full  flex items-center flex-col">
+    <div
+      id="services"
+      className="py-16 px-4 sm:px-6 lg:px-8 mx-auto max-w-7xl bg-hero"
+    >
+      {/* Header Section */}
+      <div
+        className="w-full flex items-center flex-col mb-16"
+        data-aos="fade-up"
+      >
         <h2 className="text-[#4A6CF7] text-xl font-semibold">
-          Education & Expreience
+          Education & Experience
         </h2>
-        <h1 className="font-[700] text-3xl mt-4"> My Resume</h1>
-       
+        <h1 className="font-bold text-3xl sm:text-4xl lg:text-5xl mt-4 text-center">
+          My Resume
+        </h1>
       </div>
-      <ul className="timeline">
-        <li>
-          <div className="direction-r">
-            <div className="flag-wrapper">
-              <span className="time-wrapper">
-                <span className="time">2023</span>
-              </span>
-            </div>
-            <div className="desc">
-              <h1 className="text-xl font-bold">
-                Emobilis Technology Institute{" "}
-              </h1>
-              <h2 className="text-lg font-semibold ">Fullstack Development</h2>
-              <ul className="space-y-2 text-base  font-normal mt-2 ">
-                <li className="text-gray-800 ">
-                  Specialized in full-stack web development, utilizing Python as
-                  a primary language,leveraging the Django Rest Framework to
-                  construct scalable APIs, and I efficiently manage data storage
-                  through MySQL database and SQLite3. My expertise includes
-                  crafting user-friendly interfaces, and I recently completed a
-                  final project that involved integrating third-party APIs, such
-                  as the Daraja API, for seamless payment processing.{" "}
-                </li>
-                <li className="flex gap-3">
-                  <p className="bg-blue-200 rounded-lg px-1">python</p>
-                  <p className="bg-blue-200 rounded-lg px-1">django</p>
-                  <p className="bg-blue-200 rounded-lg px-1">mysql</p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </li>
 
-        <li>
-          <div className="direction-l">
-            <div className="flag-wrapper">
-              <span className="time-wrapper">
-                <span className="time">2023 </span>
-              </span>
-            </div>
-            <div className="desc ">
-              <h1 className="text-xl font-bold">Freelance Developer</h1>
-              <div className="space-y-2 text-base font-normal  mt-2 flex lg:items-end items-center flex-col ">
-                <div className="text-gray-800  ">
-                  As a Freelance Developer, I bring a wealth of experience and
-                  expertise in crafting innovative solutions tailored to meet
-                  clients` unique needs. Proficient in a range of technologies
-                  and programming languages, I have successfully delivered
-                  projects with a keen focus on quality and efficiency. My
-                  adaptability, problem-solving skills, and commitment to
-                  delivering high-quality code make me a valuable asset in the
-                  dynamic and evolving landscape of freelance development.
-                </div>
-                <div className="flex gap-3 flex-wrap justify-center ">
-                  <div className="bg-blue-200 rounded-lg px-1">
-                    Version control
+      {/* Timeline Section */}
+      <div className="relative">
+        {/* Timeline Line - Hidden on mobile */}
+        <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-[#4A6CF7] to-blue-300"></div>
+
+        {/* Timeline Items */}
+        <div className="space-y-8 md:space-y-16">
+          {experiences.map((exp, index) => (
+            <div
+              key={index}
+              className={`relative flex flex-col md:flex-row items-center ${
+                exp.position === "right" ? "md:flex-row" : "md:flex-row-reverse"
+              }`}
+              data-aos={`fade-${exp.position === "right" ? "right" : "left"}`}
+              data-aos-delay={index * 200}
+            >
+              {/* Timeline Dot */}
+              <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-[#4A6CF7] rounded-full border-4 border-white shadow-lg z-10"></div>
+
+              {/* Content Card */}
+              <div
+                className={`w-full md:w-5/12 ${
+                  exp.position === "right" ? "md:pr-8" : "md:pl-8"
+                }`}
+              >
+                <div className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 border-l-4 border-[#4A6CF7]">
+                  {/* Year Badge */}
+                  <div className="inline-block bg-[#4A6CF7] text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
+                    {exp.year}
                   </div>
 
-                  <div className="bg-blue-200 rounded-lg px-1">
-                    Time management
+                  {/* Title and Subtitle */}
+                  <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">
+                    {exp.title}
+                  </h3>
+                  {exp.subtitle && (
+                    <h4 className="text-lg font-semibold text-gray-700 mb-4">
+                      {exp.subtitle}
+                    </h4>
+                  )}
+
+                  {/* Bullet Points */}
+                  <ul className="space-y-2 mb-6">
+                    {exp.points.map((point, pointIndex) => (
+                      <li key={pointIndex} className="flex items-start">
+                        <div className="w-2 h-2 bg-[#4A6CF7] rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                        <span className="text-gray-700 text-sm sm:text-base leading-relaxed">
+                          {point}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  {/* Skills Tags */}
+                  <div className="flex flex-wrap gap-2">
+                    {exp.skills.map((skill, skillIndex) => (
+                      <span
+                        key={skillIndex}
+                        className="bg-blue-100 hover:bg-blue-200 text-blue-800 text-xs sm:text-sm font-medium px-3 py-1 rounded-full transition-colors duration-200"
+                      >
+                        {skill}
+                      </span>
+                    ))}
                   </div>
-                  <div className="bg-blue-200 rounded-lg px-1">Soft skills</div>
                 </div>
               </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div className="direction-r">
-            <div className="flag-wrapper">
-              <span className="time-wrapper">
-                <span className="time">2023</span>
-              </span>
-            </div>
-            <div className="desc">
-              <h1 className="text-xl font-bold">
-                Jamii Telecommunications Limited{" "}
-              </h1>
-              <h2 className="text-lg font-semibold ">
-                Junior Network Engineer
-              </h2>
-              <ul className="space-y-2 text-base  font-normal mt-2 ">
-                <li className="text-gray-800 ">
-                  In my role as a Junior Network Engineer at Jamii
-                  Telecommunications Limited, I played a vital role in
-                  supporting and enhancing the organization`s network
-                  infrastructure. Leveraging my skills and knowledge in
-                  networking technologies, I actively contributed to the design,
-                  implementation, and maintenance of robust network solutions.
-                  Engaging with a dynamic team, I gained hands-on experience in
-                  troubleshooting and optimizing network performance. This
-                  position not only refined my technical abilities but also
-                  cultivated a deep understanding of network management within a
-                  corporate environment.
-                </li>
-                <li className="flex gap-3 flex-wrap justify-center">
-                  <p className="bg-blue-200 rounded-lg px-1">Cisco</p>
-                  <p className="bg-blue-200 rounded-lg px-1">OSPF</p>
-                  <p className="bg-blue-200 rounded-lg px-1">CRM</p>
 
-                  <p className="bg-blue-200 rounded-lg px-1">
-                    Network security
-                  </p>
-                </li>
-              </ul>
+              {/* Spacer for opposite side */}
+              <div className="hidden md:block w-5/12"></div>
             </div>
-          </div>
-        </li>
+          ))}
+        </div>
+      </div>
 
-        <li>
-          <div className="direction-l">
-            <div className="flag-wrapper">
-              <span className="time-wrapper">
-                <span className="time">2020 - 2024</span>
-              </span>
-            </div>
-            <div className="desc ">
-              <h1 className="text-xl font-bold">Egerton University</h1>
-              <h2 className="text-lg font-semibold ">Bsc Computer Science</h2>
-              <div className="space-y-2 text-base font-normal  mt-2 flex lg:items-end items-center flex-col ">
-                <div className="text-gray-800 ">
-                  Continuing my BSc in Computer Science at Egerton University
-                  (2020-2024), I`ve delved into low-level languages, explored
-                  Operating Systems, and gained hands-on experience with
-                  networking using tools like Cisco Packet Tracer. Additionally,
-                  my coursework has covered essential aspects such as computer
-                  security and software design life cycle, providing a
-                  comprehensive foundation for practical application in the
-                  field.
-                </div>
-                <div className="flex gap-3 flex-wrap justify-center ">
-                  <div className="bg-blue-200 rounded-lg px-1">OOP</div>
-
-                  <div className="bg-blue-200 rounded-lg px-1">
-                    Computer networks
-                  </div>
-                  <div className="bg-blue-200 rounded-lg px-1">SDLC</div>
-                  <div className="bg-blue-200 rounded-lg px-1">Security</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-      </ul>
+      {/* Mobile Timeline Indicator */}
+      <div className="md:hidden mt-12 text-center">
+        <div className="inline-flex items-center px-4 py-2 bg-[#4A6CF7] text-white rounded-full text-sm font-medium">
+          <div className="w-3 h-3 bg-white rounded-full mr-2"></div>
+          Timeline View
+        </div>
+      </div>
     </div>
   );
 }

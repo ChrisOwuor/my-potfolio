@@ -20,7 +20,6 @@ const stack = [
   },
   {
     id: 2,
-
     title: "Node.js",
     img: "https://cdn-icons-png.flaticon.com/512/5968/5968322.png",
     content:
@@ -49,7 +48,6 @@ const stack = [
   },
   {
     id: 4,
-
     title: "HTML/CSS",
     img: "https://miro.medium.com/v2/resize:fit:792/1*lJ32Bl-lHWmNMUSiSq17gQ.png",
     content:
@@ -85,7 +83,6 @@ const stack = [
     frameworks: [
       {
         title: "React.js",
-
         content:
           "Developed dynamic and efficient user interfaces with the React library.",
       },
@@ -93,6 +90,30 @@ const stack = [
   },
   {
     id: 7,
+    title: "Java & Spring Boot",
+    img: "https://img.icons8.com/color/48/spring-logo.png",
+    content:
+      "Strong understanding of Java for object-oriented programming, backend development, and enterprise-level applications. Skilled in leveraging Spring Boot to build secure, scalable, and production-ready RESTful APIs and microservices.",
+    frameworks: [
+      {
+        title: "Spring Boot",
+        content:
+          "Developed RESTful APIs and enterprise-grade backend systems using Spring Boot. Implemented security features with Spring Security, integrated with relational databases using JPA/Hibernate, and optimized performance for large-scale applications.",
+      },
+      {
+        title: "Spring Data JPA",
+        content:
+          "Utilized Spring Data JPA for efficient database interaction, automating repository creation, and simplifying CRUD operations.",
+      },
+      {
+        title: "Spring Security",
+        content:
+          "Implemented authentication and authorization mechanisms with Spring Security, including JWT and role-based access control.",
+      },
+    ],
+  },
+  {
+    id: 8,
     title: "Databases",
     img: "https://w7.pngwing.com/pngs/310/475/png-transparent-database-computer-icons-computer-software-information-database-miscellaneous-angle-information-technology.png",
     content:
@@ -104,14 +125,13 @@ const stack = [
       },
       {
         title: "MongoDB",
-
         content:
           "Utilized MongoDB for flexible and scalable NoSQL data storage.",
       },
     ],
   },
   {
-    id: 8,
+    id: 9,
     title: "Cloud Platforms",
     img: "https://p7.hiclipart.com/preview/249/603/673/onedrive-computer-icons-cloud-storage-microsoft-file-hosting-service-clouds.jpg",
     content:
